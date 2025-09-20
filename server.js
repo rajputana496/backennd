@@ -6,10 +6,11 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 // Import your controllers
-import { signup, login } from "./userController.js";
-import { signupDoctor, loginDoctor } from "./doctorController.js";
-import { bookConsultation, getUserConsultations } from "./consultationController.js";
-import { rescheduleConsultation } from "./doctorRescheduleController.js";
+import { signupDoctor, loginDoctor } from './doctorController.js';
+import { signup, login } from './userController.js';
+import { bookConsultation, getUserConsultations } from './consultationController.js';
+import { rescheduleConsultation } from './doctorRescheduleController.js';
+import db from './db.js';
 
 // Import DB and Groq
 import db from "./db.js";
